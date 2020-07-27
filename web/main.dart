@@ -7,6 +7,7 @@ void main() {
   button.onClick.forEach((element) {
     var text = input.value;
     if (text.isNotEmpty) {
+      input.value = '';
       output.children.add(newLI(text));
     }
   });
